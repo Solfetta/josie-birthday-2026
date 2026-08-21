@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Анкета для девочек 🎀</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Delius&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<!-- =====================================================
+     BACKGROUND DECORATIONS
+     ===================================================== -->
+
+<div class="background-decor">
+
+    <div class="sticker sticker-1">🎀</div>
+    <div class="sticker sticker-2">💗</div>
+    <div class="sticker sticker-3">✦</div>
+    <div class="sticker sticker-4">🌸</div>
+    <div class="sticker sticker-5">♡</div>
+    <div class="sticker sticker-6">✧</div>
+
+</div>
+
+
+<main class="app">
+
+
+    <!-- =====================================================
+         COVER
+         ===================================================== -->
+
+    <section
+            class="cover-screen"
+            id="coverScreen"
+    >
+
+        <div class="notebook-cover">
+
+            <div class="rings">
+
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+
+            <div class="cover-tape"></div>
+
+
+            <div class="cover-sticker sticker-star">
+                ✦
+            </div>
+
+            <div class="cover-sticker sticker-heart">
+                ♥
+            </div>
+
+
+            <div class="cover-content">
+
+                <div class="cover-top">
+                    ЛИЧНОЕ • СЕКРЕТНО • НЕ ПОДГЛЯДЫВАТЬ
+                </div>
+
+                <div class="cover-bow">
+                    🎀
+                </div>
+
+                <h1>
+                    Анкета
+                    <span>для девочек</span>
+                </h1>
+
+                <div class="cover-hearts">
+                    ♥ ♥ ♥
+                </div>
+
+                <p>
+                    для тебя<br>
+                    и<br>
+                    твоих друзей
+                </p>
+
+                <div class="birthday-label">
+                    Хозяйка анкеты: Джози
+                </div>
+
+            </div>
+
+
+            <div class="cover-footer">
+
+                <span></span>
+                <span>2026</span>
+
+            </div>
+
+        </div>
+
+
+        <button
+                class="open-button"
+                id="openButton"
+        >
+            <span>Открыть анкету</span>
+            <b>→</b>
+        </button>
+
+        <a href="answers.html" class="answers-link">
+            посмотреть ответы
+            <span>♥</span>
+        </a>
+
+        <div class="cover-hint">
+            Сделано мамами с любовью ♥
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         NOTEBOOK
+         ===================================================== -->
+
+    <section
+            class="notebook-screen"
+            id="notebookScreen"
+    >
+
+
+        <div class="notebook-wrapper">
+
+
+            <!-- =================================================
+                 BOOK
+                 ================================================= -->
+
+            <div
+                    class="book"
+                    id="book"
+            >
+
+                <!-- LEFT PAGE -->
+
+                <article class="paper left-paper">
+
+                    <div class="paper-holes">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+
+                    <div class="paper-tape tape-left"></div>
+
+
+                    <div
+                            class="paper-content"
+                            id="leftPage"
+                    ></div>
+
+
+                    <div
+                            class="paper-number paper-number-left"
+                            id="leftPageNumber"
+                    >
+                        01
+                    </div>
+
+                </article>
+
+
+                <!-- SPINE -->
+
+                <div class="book-spine"></div>
+
+
+                <!-- RIGHT PAGE -->
+
+                <article class="paper right-paper">
+
+                    <div class="paper-holes">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+
+                    <div class="paper-tape tape-right"></div>
+
+
+                    <div
+                            class="paper-content"
+                            id="rightPage"
+                    ></div>
+
+
+                    <div
+                            class="paper-number paper-number-right"
+                            id="rightPageNumber"
+                    >
+                        10
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- =================================================
+                 NAVIGATION
+                 ================================================= -->
+
+            <div class="navigation">
+
+                <button
+                        type="button"
+                        class="nav-button"
+                        id="previousButton"
+                >
+                    <span>←</span>
+                    назад
+                </button>
+
+
+                <div class="progress">
+
+                    <div class="progress-text">
+                        разворот
+                        <b id="spreadNumber">1</b>
+                        из
+                        <b id="totalSpreads">2</b>
+                    </div>
+
+                    <div class="progress-track">
+                        <div
+                                class="progress-bar"
+                                id="progressBar"
+                        ></div>
+                    </div>
+
+                </div>
+
+
+                <button
+                        type="button"
+                        class="nav-button"
+                        id="nextButton"
+                >
+                    дальше
+                    <span>→</span>
+                </button>
+
+            </div>
+
+
+            <div
+                    class="save-status"
+                    id="saveStatus"
+            >
+                ♥ ответы сохраняются автоматически
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FINISH
+         ===================================================== -->
+
+    <section
+            class="finish-screen"
+            id="finishScreen"
+    >
+
+        <div class="finish-card">
+
+            <div class="finish-decoration">
+                ✦　♡　✦
+            </div>
+
+            <div class="finish-bow">
+                🎀
+            </div>
+
+            <h2>
+                Анкета
+                <em>заполнена!</em>
+            </h2>
+
+            <div class="finish-hearts">
+                ♥ ♥ ♥
+            </div>
+
+            <p>
+                Спасибо за честные ответы.
+            </p>
+
+            <p class="finish-small">
+                Теперь эта маленькая анкета<br>
+                останется на память.
+            </p>
+
+            <button
+                    type="button"
+                    class="finish-button"
+                    id="finishButton"
+            >
+                ♥ закончить
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script type="module" src="script.js"></script>
+
+</body>
+
+</html>

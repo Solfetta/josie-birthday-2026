@@ -1,0 +1,2198 @@
+/* =========================================================
+   GIRLS QUESTIONNAIRE
+   JOSIE BIRTHDAY
+   ========================================================= */
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    min-height: 100%;
+}
+
+
+body {
+    min-height: 100vh;
+
+    background:
+            radial-gradient(
+                    circle at 20% 20%,
+                    rgba(255, 255, 255, .8),
+                    transparent 28%
+            ),
+            radial-gradient(
+                    circle at 80% 75%,
+                    rgba(245, 180, 210, .35),
+                    transparent 30%
+            ),
+            #fcecf5;
+
+    color: #754054;
+
+    font-family:
+            "Delius",
+            cursive;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   VARIABLES
+   ========================================================= */
+
+:root {
+
+    --pink: #dc709d;
+    --pink-dark: #a44070;
+    --pink-light: #f3a9c7;
+
+    --paper: #fffdf8;
+
+    --paper-line:
+            rgba(211, 111, 151, .22);
+
+    --shadow:
+            rgba(116, 47, 78, .16);
+}
+
+
+/* =========================================================
+   BACKGROUND DECORATION
+   ========================================================= */
+
+/* =========================================================
+   PINK NOTEBOOK BACKGROUND
+   ========================================================= */
+
+body {
+
+    background:
+            #fce8ef;
+
+}
+
+
+/* маленький узор из точек */
+
+body::before {
+
+    content:
+            "";
+
+    position:
+            fixed;
+
+    inset:
+            0;
+
+    pointer-events:
+            none;
+
+    background-image:
+
+            radial-gradient(
+                    circle,
+                    rgba(255,255,255,.75) 1px,
+                    transparent 1px
+            );
+
+    background-size:
+            28px 28px;
+
+    opacity:
+            .55;
+
+    z-index:
+            -2;
+
+}
+
+
+/* =========================================================
+   BACKGROUND DECORATIONS
+   ========================================================= */
+
+.background-decor {
+
+    position:
+            fixed;
+
+    inset:
+            0;
+
+    pointer-events:
+            none;
+
+    overflow:
+            hidden;
+
+    z-index:
+            -1;
+
+}
+
+
+.sticker {
+
+    position:
+            absolute;
+
+    font-size:
+            38px;
+
+    opacity:
+            .45;
+
+    user-select:
+            none;
+
+}
+
+
+/* верхний левый */
+
+.sticker-1 {
+
+    top:
+            8%;
+
+    left:
+            5%;
+
+    transform:
+            rotate(-15deg);
+
+}
+
+
+/* верхний правый */
+
+.sticker-2 {
+
+    top:
+            18%;
+
+    right:
+            7%;
+
+    transform:
+            rotate(12deg);
+
+}
+
+
+/* левый центр */
+
+.sticker-3 {
+
+    top:
+            48%;
+
+    left:
+            3%;
+
+    font-size:
+            30px;
+
+    transform:
+            rotate(20deg);
+
+}
+
+
+/* нижний правый */
+
+.sticker-4 {
+
+    bottom:
+            20%;
+
+    right:
+            4%;
+
+    transform:
+            rotate(-12deg);
+
+}
+
+
+/* нижний левый */
+
+.sticker-5 {
+
+    bottom:
+            8%;
+
+    left:
+            8%;
+
+    font-size:
+            45px;
+
+    transform:
+            rotate(8deg);
+
+}
+
+
+/* правый центр */
+
+.sticker-6 {
+
+    top:
+            55%;
+
+    right:
+            10%;
+
+    font-size:
+            32px;
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (
+max-width: 700px
+) {
+
+    .sticker {
+
+        opacity:
+                .25;
+
+    }
+
+}
+
+/* =========================================================
+   COVER SCREEN
+   ========================================================= */
+
+.cover-screen {
+
+    position: relative;
+
+    z-index: 2;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 35px 20px;
+
+    transition:
+            opacity .6s ease,
+            visibility .6s ease;
+}
+
+
+.cover-screen.hidden {
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   NOTEBOOK COVER
+   ========================================================= */
+
+.notebook-cover {
+
+    position: relative;
+
+    width: min(450px, 88vw);
+
+    aspect-ratio: .72;
+
+    padding:
+            55px
+            42px
+            45px;
+
+    overflow: hidden;
+
+    border-radius:
+            8px
+            18px
+            18px
+            8px;
+
+    background:
+            linear-gradient(
+                    135deg,
+                    #f4a8c5,
+                    #e887ad 50%,
+                    #dc719c
+            );
+
+    box-shadow:
+            16px 20px 0 rgba(150, 60, 100, .08),
+            0 25px 50px rgba(115, 45, 78, .22);
+
+    transform:
+            rotate(-1.3deg);
+
+    transition:
+            transform .4s ease;
+}
+
+
+.notebook-cover:hover {
+
+    transform:
+            rotate(0deg)
+            translateY(-5px);
+}
+
+
+.notebook-cover::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    opacity: .18;
+
+    background-image:
+            radial-gradient(
+                    rgba(255, 255, 255, .8) .7px,
+                    transparent .7px
+            );
+
+    background-size: 7px 7px;
+}
+
+
+/* =========================================================
+   COVER RINGS
+   ========================================================= */
+
+.rings {
+
+    position: absolute;
+
+    left: -17px;
+
+    top: 8%;
+
+    bottom: 8%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-around;
+
+    z-index: 10;
+}
+
+
+.rings span {
+
+    width: 34px;
+
+    height: 13px;
+
+    border:
+            3px solid #d4cfd1;
+
+    border-right: none;
+
+    border-radius:
+            10px 0 0 10px;
+
+    background:
+            linear-gradient(
+                    #eeeeee,
+                    #bdb9bc
+            );
+
+    box-shadow:
+            1px 2px 3px rgba(0, 0, 0, .14);
+}
+
+
+/* =========================================================
+   COVER DECORATIONS
+   ========================================================= */
+
+.cover-tape {
+
+    position: absolute;
+
+    top: 18px;
+
+    right: -25px;
+
+    width: 110px;
+
+    height: 28px;
+
+    background:
+            rgba(255, 234, 172, .7);
+
+    transform:
+            rotate(35deg);
+}
+
+
+.cover-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.cover-top {
+
+    color:
+            rgba(255, 255, 255, .8);
+
+    font-family: "Quicksand", sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: .15em;
+}
+
+
+.cover-bow {
+
+    margin-top: 25px;
+
+    font-size: 55px;
+
+    filter:
+            drop-shadow(
+                    3px 4px 0 rgba(125, 40, 78, .12)
+            );
+}
+
+
+.cover-content h1 {
+
+    margin-top: 10px;
+
+    color: white;
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size:
+            clamp(43px, 10vw, 58px);
+
+    font-weight: 600;
+
+    line-height: .92;
+
+    text-shadow:
+            2px 3px 0 rgba(130, 45, 83, .14);
+}
+
+
+
+.cover-hearts {
+
+    margin-top: 23px;
+
+    color: white;
+
+    letter-spacing: 7px;
+
+    font-size: 14px;
+}
+
+
+.cover-content p {
+
+    margin-top: 17px;
+
+    color:
+            rgba(255, 255, 255, .93);
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px;
+
+    line-height: 1.55;
+}
+
+
+.birthday-label {
+
+    margin-top: auto;
+
+    padding:
+            8px
+            17px;
+
+    border:
+            1px dashed
+            rgba(255, 255, 255, .7);
+
+    border-radius: 20px;
+
+    color: white;
+
+    font-family:
+            "Caveat",
+            cursive;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+.cover-footer {
+
+    position: absolute;
+
+    z-index: 5;
+
+    left: 42px;
+
+    right: 42px;
+
+    bottom: 25px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color:
+            rgba(255, 255, 255, .65);
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: .15em;
+}
+
+
+.cover-sticker {
+
+    position: absolute;
+
+    z-index: 8;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 43px;
+
+    height: 43px;
+
+    border-radius: 50%;
+
+    box-shadow:
+            2px 4px 8px rgba(120, 40, 75, .13);
+}
+
+
+.sticker-star {
+
+    top: 90px;
+
+    right: 30px;
+
+    background: #ffe4a4;
+
+    color: #e39a4b;
+
+    font-size: 23px;
+
+    transform: rotate(10deg);
+}
+
+
+.sticker-heart {
+
+    left: 27px;
+
+    bottom: 105px;
+
+    background: #fff0aa;
+
+    color: #e87c9f;
+
+    font-size: 18px;
+
+    transform: rotate(-12deg);
+}
+
+
+/* =========================================================
+   OPEN BUTTON
+   ========================================================= */
+
+.open-button {
+
+    margin-top: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding:
+            13px
+            24px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: white;
+
+    color:
+            var(--pink-dark);
+
+    font-family:
+            "Delius",
+            cursive;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    box-shadow:
+            0 7px 20px rgba(130, 50, 85, .12);
+
+    transition:
+            transform .2s ease,
+            box-shadow .2s ease;
+}
+
+
+.open-button:hover {
+
+    transform:
+            translateY(-3px);
+
+    box-shadow:
+            0 10px 25px rgba(130, 50, 85, .18);
+}
+
+
+.open-button b {
+
+    font-size: 20px;
+
+    transition:
+            transform .2s ease;
+}
+
+
+.open-button:hover b {
+
+    transform:
+            translateX(4px);
+}
+
+
+.cover-hint {
+
+    margin-top: 12px;
+
+    color: #b47792;
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   NOTEBOOK SCREEN
+   ========================================================= */
+
+.notebook-screen {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 3;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 100vh;
+
+    padding: 20px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition:
+            opacity .6s ease,
+            visibility .6s ease;
+}
+
+
+.notebook-screen.visible {
+
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+/* =========================================================
+   NOTEBOOK WRAPPER
+   ========================================================= */
+
+.notebook-wrapper {
+
+    width:
+            min(850px, 92vw);
+
+    margin:
+            0 auto;
+}
+
+
+/* =========================================================
+   BOOK
+   ========================================================= */
+
+.book {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        8px
+        1fr;
+
+    align-items: stretch;
+
+    filter:
+            drop-shadow(
+                    0 18px 25px rgba(110, 40, 75, .15)
+            );
+}
+
+
+/* =========================================================
+   PAPER
+   ========================================================= */
+
+.paper {
+
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio:
+            148 / 210;
+
+    overflow: hidden;
+
+    background:
+            var(--paper);
+}
+
+
+.left-paper {
+
+    border-radius:
+            14px 0 0 14px;
+
+    box-shadow:
+            inset -15px 0 25px rgba(120, 60, 80, .055);
+}
+
+
+.right-paper {
+
+    border-radius:
+            0 14px 14px 0;
+
+    box-shadow:
+            inset 15px 0 25px rgba(120, 60, 80, .055);
+}
+
+
+/* =========================================================
+   PAPER TEXTURE
+   ========================================================= */
+
+.paper::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    opacity: .23;
+
+    background-image:
+            radial-gradient(
+                    rgba(130, 80, 90, .18) .6px,
+                    transparent .6px
+            );
+
+    background-size: 5px 5px;
+
+    z-index: 1;
+}
+
+
+.paper::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+            repeating-linear-gradient(
+                    to bottom,
+                    transparent 0,
+                    transparent 29px,
+                    var(--paper-line) 30px
+            );
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   PAPER CONTENT
+   ========================================================= */
+
+.paper-content {
+
+    position: relative;
+
+    z-index: 3;
+
+    width: 100%;
+
+    height: 100%;
+
+    padding:
+            42px
+            30px
+            35px
+            45px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   PAPER HOLES
+   ========================================================= */
+
+.paper-holes {
+
+    position: absolute;
+
+    z-index: 8;
+
+    top: 0;
+
+    bottom: 0;
+
+    width: 18px;
+
+    padding:
+            48px 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-around;
+}
+
+
+.left-paper .paper-holes {
+
+    left: 10px;
+}
+
+
+.right-paper .paper-holes {
+
+    right: 10px;
+}
+
+
+.paper-holes span {
+
+    width: 9px;
+
+    height: 9px;
+
+    border-radius: 50%;
+
+    background:
+            radial-gradient(
+                    circle at 35% 30%,
+                    #ccc5c8,
+                    #f7f3f4 50%,
+                    #d3cbcf
+            );
+
+    box-shadow:
+            inset 1px 1px 2px rgba(80, 40, 60, .12);
+}
+
+
+/* =========================================================
+   BOOK SPINE
+   ========================================================= */
+
+.book-spine {
+
+    position: relative;
+
+    z-index: 15;
+
+    background:
+            linear-gradient(
+                    to right,
+                    #d5cdd1,
+                    #f5eff1 45%,
+                    #c8bfc4
+            );
+
+    box-shadow:
+            inset 2px 0 3px rgba(100, 40, 70, .12),
+            inset -2px 0 3px rgba(100, 40, 70, .12);
+}
+
+
+/* =========================================================
+   PAPER TAPE
+   ========================================================= */
+
+.paper-tape {
+
+    position: absolute;
+
+    z-index: 10;
+
+    width: 80px;
+
+    height: 21px;
+
+    background:
+            rgba(255, 226, 164, .62);
+}
+
+
+.tape-left {
+
+    top: 15px;
+
+    right: 30px;
+
+    transform:
+            rotate(4deg);
+}
+
+
+.tape-right {
+
+    top: 17px;
+
+    left: 30px;
+
+    transform:
+            rotate(-4deg);
+}
+
+
+/* =========================================================
+   QUESTIONS
+   ========================================================= */
+
+.question {
+
+    position: relative;
+
+    margin-bottom: 14px;
+}
+
+
+.question:last-child {
+
+    margin-bottom: 0;
+}
+
+
+.question-title {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 5px;
+
+    color:
+            var(--pink-dark);
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    line-height: 1.15;
+}
+
+
+.question-number {
+
+    flex:
+            0 0 auto;
+
+    color:
+            #e28aad;
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size: 18px;
+}
+
+
+.question-description {
+
+    margin:
+            3px
+            0
+            3px
+            17px;
+
+    color:
+            #9d6c80;
+
+    font-size: 14px;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   ANSWERS
+   ========================================================= */
+
+.answer {
+
+    width: 100%;
+
+    min-height: 27px;
+
+    padding:
+            1px
+            4px;
+
+    border: none;
+
+    border-bottom:
+            1px dashed
+            rgba(198, 101, 143, .55);
+
+    outline: none;
+
+    background:
+            transparent;
+
+    color:
+            #704054;
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size: 18px;
+
+    line-height: 1.3;
+}
+
+
+.answer::placeholder {
+
+    color:
+            #d3a2b6;
+}
+
+
+.answer:focus {
+
+    background:
+            rgba(255, 220, 235, .18);
+
+    border-bottom-color:
+            var(--pink);
+}
+
+
+textarea.answer {
+
+    min-height: 38px;
+
+    resize: none;
+}
+
+
+/* =========================================================
+   QUESTION HEART
+   ========================================================= */
+
+.question::after {
+
+    content: "♡";
+
+    position: absolute;
+
+    top: -1px;
+
+    right: 0;
+
+    color:
+            #efa5c1;
+
+    font-size: 11px;
+}
+
+
+.question:focus-within::after {
+
+    content: "♥";
+
+    color:
+            var(--pink);
+}
+
+
+/* =========================================================
+   PAGE NUMBERS
+   ========================================================= */
+
+.paper-number {
+
+    position: absolute;
+
+    bottom: 14px;
+
+    z-index: 9;
+
+    color:
+            #c58ba2;
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size: 15px;
+}
+
+
+.paper-number-left {
+
+    left: 25px;
+}
+
+
+.paper-number-right {
+
+    right: 25px;
+}
+
+
+/* =========================================================
+   PAGE DECORATIONS
+   ========================================================= */
+
+.paper-content .page-star {
+
+    position: absolute;
+
+    color:
+            #efa3bf;
+
+    font-size: 13px;
+}
+
+
+.page-star-one {
+
+    top: 40px;
+
+    left: 38px;
+}
+
+
+.page-star-two {
+
+    right: 25px;
+
+    bottom: 35px;
+
+    font-size: 19px !important;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.navigation {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-top: 13px;
+}
+
+
+.nav-button {
+
+    min-width: 100px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    padding:
+            8px
+            13px;
+
+    border: none;
+
+    border-radius: 22px;
+
+    background:
+            rgba(255, 255, 255, .85);
+
+    color:
+            var(--pink-dark);
+
+    font-family:
+            "Delius",
+            cursive;
+
+    font-size: 10px;
+
+    cursor: pointer;
+
+    box-shadow:
+            0 4px 12px rgba(130, 50, 85, .08);
+
+    transition:
+            transform .2s ease,
+            opacity .2s ease;
+}
+
+
+.nav-button:hover:not(:disabled) {
+
+    transform:
+            translateY(-2px);
+}
+
+
+.nav-button:disabled {
+
+    opacity: .35;
+
+    cursor: default;
+}
+
+
+.nav-button span {
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   PROGRESS
+   ========================================================= */
+
+.progress {
+
+    width: 160px;
+
+    text-align: center;
+}
+
+
+.progress-text {
+
+    margin-bottom: 5px;
+
+    color:
+            #b37b94;
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size: 14px;
+}
+
+
+.progress-track {
+
+    height: 4px;
+
+    overflow: hidden;
+
+    border-radius: 5px;
+
+    background:
+            rgba(211, 111, 151, .15);
+}
+
+
+.progress-bar {
+
+    width: 50%;
+
+    height: 100%;
+
+    border-radius: 5px;
+
+    background:
+            var(--pink);
+
+    transition:
+            width .35s ease;
+}
+
+
+/* =========================================================
+   SAVE STATUS
+   ========================================================= */
+
+.save-status {
+
+    margin-top: 6px;
+
+    text-align: center;
+
+    color:
+            #c28ba2;
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   PAGE TURN ANIMATION
+   ========================================================= */
+
+.book.turn-next {
+
+    animation:
+            turnNext .5s ease;
+}
+
+
+.book.turn-prev {
+
+    animation:
+            turnPrev .5s ease;
+}
+
+
+@keyframes turnNext {
+
+    0% {
+        transform:
+                perspective(1200px)
+                rotateY(0);
+    }
+
+    45% {
+        transform:
+                perspective(1200px)
+                rotateY(-4deg);
+    }
+
+    100% {
+        transform:
+                perspective(1200px)
+                rotateY(0);
+    }
+}
+
+
+@keyframes turnPrev {
+
+    0% {
+        transform:
+                perspective(1200px)
+                rotateY(0);
+    }
+
+    45% {
+        transform:
+                perspective(1200px)
+                rotateY(4deg);
+    }
+
+    100% {
+        transform:
+                perspective(1200px)
+                rotateY(0);
+    }
+}
+
+
+/* =========================================================
+   FINISH SCREEN
+   ========================================================= */
+
+.finish-screen {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 50;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 25px;
+
+    background:
+            rgba(252, 236, 245, .96);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition:
+            opacity .5s ease,
+            visibility .5s ease;
+}
+
+
+.finish-screen.visible {
+
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+.finish-card {
+
+    position: relative;
+
+    width:
+            min(460px, 92vw);
+
+    padding:
+            55px
+            35px;
+
+    text-align: center;
+
+    background:
+            var(--paper);
+
+    border:
+            1px solid
+            rgba(214, 113, 154, .35);
+
+    box-shadow:
+            0 25px 60px rgba(120, 45, 80, .15);
+
+    transform:
+            rotate(-1deg);
+}
+
+
+.finish-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 9px;
+
+    border:
+            1px dashed
+            rgba(214, 113, 154, .3);
+}
+
+
+.finish-decoration,
+.finish-bow,
+.finish-card h2,
+.finish-hearts,
+.finish-card p,
+.finish-button {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.finish-decoration {
+
+    color:
+            #ed9dbb;
+
+    font-size: 14px;
+}
+
+
+.finish-bow {
+
+    margin-top: 12px;
+
+    font-size: 48px;
+}
+
+
+.finish-card h2 {
+
+    margin-top: 8px;
+
+    color:
+            var(--pink-dark);
+
+    font-family:
+            "DM Serif Display",
+            serif;
+
+    font-size: 42px;
+
+    font-weight: 400;
+}
+
+
+.finish-card h2 em {
+
+    display: block;
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size: 1.1em;
+}
+
+
+.finish-hearts {
+
+    margin:
+            17px 0;
+
+    color:
+            #e58aad;
+
+    letter-spacing: 7px;
+}
+
+
+.finish-card p {
+
+    color:
+            #8e5c72;
+
+    font-size: 15px;
+}
+
+
+.finish-card .finish-small {
+
+    margin-top: 8px;
+
+    color:
+            #b18094;
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size: 18px;
+}
+
+
+.finish-button {
+
+    margin-top: 25px;
+
+    padding:
+            12px
+            25px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background:
+            var(--pink);
+
+    color: white;
+
+    font-family:
+            "Delius",
+            cursive;
+
+    cursor: pointer;
+
+    box-shadow:
+            0 5px 15px rgba(185, 67, 116, .22);
+
+    transition:
+            transform .2s ease;
+}
+
+
+.finish-button:hover {
+
+    transform:
+            translateY(-2px);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .notebook-wrapper {
+
+        width:
+                min(760px, 94vw);
+    }
+
+
+    .paper-content {
+
+        padding:
+                38px
+                24px
+                32px
+                40px;
+    }
+
+
+    .question {
+
+        margin-bottom: 9px;
+    }
+
+
+    .question-title {
+
+        font-size: 10px;
+    }
+
+
+    .question-number {
+
+        font-size: 15px;
+    }
+
+
+    .question-description {
+
+        font-size: 7px;
+    }
+
+
+    .answer {
+
+        min-height: 20px;
+
+        font-size: 14px;
+    }
+
+
+    textarea.answer {
+
+        min-height: 48px;
+    }
+
+
+    .paper-holes {
+
+        display: none;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 620px) {
+
+    .notebook-screen {
+
+        position: fixed;
+
+        align-items: flex-start;
+
+        justify-content: center;
+
+        padding:
+                15px 8px 20px;
+
+        overflow-y: auto;
+    }
+
+
+    .notebook-wrapper {
+
+        width: 98vw;
+
+        margin-top: 10px;
+    }
+
+
+    /*
+        На телефоне две страницы всё ещё остаются
+        разворотом, но становятся компактнее.
+    */
+
+    .book {
+
+        grid-template-columns:
+            1fr
+            4px
+            1fr;
+    }
+
+
+    .paper {
+
+        aspect-ratio:
+                148 / 210;
+    }
+
+
+    .paper-content {
+
+        padding:
+                34px
+                10px
+                28px
+                16px;
+    }
+
+
+    .paper-holes {
+
+        display: none;
+    }
+
+
+    .paper-tape {
+
+        width: 55px;
+
+        height: 17px;
+    }
+
+
+    .tape-left {
+
+        right: 12px;
+    }
+
+
+    .tape-right {
+
+        left: 12px;
+    }
+
+
+    .question {
+
+        margin-bottom: 7px;
+    }
+
+
+    .question-title {
+
+        font-size: 7.4px;
+
+        line-height: 1.1;
+    }
+
+
+    .question-number {
+
+        font-size: 11px;
+    }
+
+
+    .question-description {
+
+        margin:
+                2px
+                0
+                2px
+                14px;
+
+        font-size: 5.7px;
+
+        line-height: 1.2;
+    }
+
+
+    .answer {
+
+        min-height: 17px;
+
+        padding: 0 2px;
+
+        font-size: 11px;
+    }
+
+
+    textarea.answer {
+
+        min-height: 25px;
+    }
+
+
+    .question::after {
+
+        display: none;
+    }
+
+
+    .paper-number {
+
+        bottom: 10px;
+
+        font-size: 12px;
+    }
+
+
+    .paper-number-left {
+
+        left: 15px;
+    }
+
+
+    .paper-number-right {
+
+        right: 15px;
+    }
+
+
+    .navigation {
+
+        margin-top: 9px;
+    }
+
+
+    .nav-button {
+
+        min-width: auto;
+
+        padding:
+                6px
+                8px;
+
+        font-size: 8px;
+    }
+
+
+    .nav-button span {
+
+        font-size: 13px;
+    }
+
+
+    .progress {
+
+        width: 80px;
+    }
+
+
+    .progress-text {
+
+        font-size: 11px;
+    }
+
+
+    .progress-track {
+
+        height: 3px;
+    }
+
+
+    .save-status {
+
+        font-size: 11px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .notebook-wrapper {
+
+        width: 99vw;
+    }
+
+
+    .paper-content {
+
+        padding:
+                31px
+                8px
+                25px
+                12px;
+    }
+
+
+    .question {
+
+        margin-bottom: 6px;
+    }
+
+
+    .question-title {
+
+        font-size: 6.8px;
+    }
+
+
+    .question-number {
+
+        font-size: 10px;
+    }
+
+
+    .question-description {
+
+        font-size: 5.2px;
+    }
+
+
+    .answer {
+
+        font-size: 10px;
+
+        min-height: 15px;
+    }
+
+
+    textarea.answer {
+
+        min-height: 23px;
+    }
+
+
+    .nav-button {
+
+        padding:
+                5px
+                7px;
+
+        font-size: 7px;
+    }
+
+
+    .progress {
+
+        width: 65px;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration: .01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        scroll-behavior: auto !important;
+
+        transition-duration: .01ms !important;
+    }
+
+}
+
+/* =========================================================
+   ANSWERS LINK
+   ========================================================= */
+
+.answers-link {
+
+    display:
+            inline-flex;
+
+    align-items:
+            center;
+
+    justify-content:
+            center;
+
+    gap:
+            7px;
+
+    margin-top:
+            18px;
+
+    padding:
+            9px 18px;
+
+    border:
+            1px solid
+            #e8a9bd;
+
+    border-radius:
+            30px;
+
+    background:
+            rgba(
+                    255,
+                    255,
+                    255,
+                    .50
+            );
+
+    color:
+            #a44070;
+
+    text-decoration:
+            none;
+
+    font-family:
+            "Delius",
+            cursive;
+
+    font-size:
+            14px;
+
+    transition:
+            .2s ease;
+
+}
+
+
+.answers-link span {
+
+    font-size:
+            16px;
+
+}
+
+
+.answers-link:hover {
+
+    background:
+            rgba(
+                    255,
+                    255,
+                    255,
+                    .95
+            );
+
+    transform:
+            translateY(-2px);
+
+    box-shadow:
+            0 6px 15px
+            rgba(
+                    120,
+                    50,
+                    80,
+                    .10
+            );
+
+}

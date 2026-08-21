@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Анкеты девочек ♥</title>
+
+    <link
+            rel="stylesheet"
+            href="answers.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     DECORATIONS
+     ===================================================== -->
+
+<div class="background-decor">
+
+    <div class="sticker sticker-1">🎀</div>
+    <div class="sticker sticker-2">💗</div>
+    <div class="sticker sticker-3">✦</div>
+    <div class="sticker sticker-4">🌸</div>
+    <div class="sticker sticker-5">♡</div>
+    <div class="sticker sticker-6">✧</div>
+
+</div>
+
+
+<!-- =====================================================
+     HEADER
+     ===================================================== -->
+
+<header class="site-header">
+
+    <div class="header-decoration">
+        ✦
+    </div>
+
+
+    <h1>
+        Анкеты
+    </h1>
+
+
+    <p class="header-subtitle">
+        маленькая коллекция больших мыслей
+    </p>
+
+    <a href="index.html" class="questionnaire-link">
+        заполнить анкету
+        <span>→</span>
+    </a>
+
+    <div class="header-heart">
+        ♥
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     MAIN
+     ===================================================== -->
+
+<main class="answers-container">
+
+
+    <!-- =================================================
+         LIST VIEW
+         ================================================= -->
+
+    <section
+            id="listView"
+            class="view active"
+    >
+
+        <div class="section-heading">
+
+            <div class="section-title">
+                Вот что получилось:
+            </div>
+
+            <div
+                    id="answerCount"
+                    class="section-count"
+            >
+                загружаем...
+            </div>
+
+        </div>
+
+
+        <!-- LOADING -->
+
+        <div
+                id="loading"
+                class="loading"
+        >
+
+            <div class="loading-heart">
+                ♥
+            </div>
+
+            <div>
+                собираем анкеты...
+            </div>
+
+        </div>
+
+
+        <!-- ERROR -->
+
+        <div
+                id="errorMessage"
+                class="error-message"
+        >
+
+            <div class="error-icon">
+                :(
+            </div>
+
+            <div>
+                Не удалось загрузить анкеты.
+            </div>
+
+            <button
+                    id="retryButton"
+                    class="pink-button"
+            >
+                попробовать ещё раз
+            </button>
+
+        </div>
+
+
+        <!-- EMPTY -->
+
+        <div
+                id="emptyMessage"
+                class="empty-message"
+        >
+
+            <div class="empty-icon">
+                🎀
+            </div>
+
+            <div class="empty-title">
+                Пока здесь пусто
+            </div>
+
+            <div class="empty-text">
+                Кто-нибудь обязательно
+                станет первой ♥
+            </div>
+
+        </div>
+
+
+        <!-- ANSWERS LIST -->
+
+        <div
+                id="answersGrid"
+                class="answers-grid"
+        ></div>
+
+    </section>
+
+
+    <!-- =================================================
+         SINGLE ANSWER VIEW
+         ================================================= -->
+
+    <section
+            id="singleView"
+            class="view"
+    >
+
+        <button
+                id="backButton"
+                class="back-button"
+        >
+
+            <span>
+                ←
+            </span>
+
+            ко всем анкетам
+
+        </button>
+
+
+        <article class="answer-book">
+
+
+            <!-- BOOK HEADER -->
+
+            <div class="answer-book-header">
+
+                <div class="little-heart">
+                    ♥
+                </div>
+
+
+                <h2
+                        id="singleName"
+                >
+                    —
+                </h2>
+
+
+                <div
+                        id="singleMeta"
+                        class="single-meta"
+                >
+                    —
+                </div>
+
+
+                <div class="header-line">
+                    ✦ ♥ ✦
+                </div>
+
+            </div>
+
+
+            <!-- QUESTIONS -->
+
+            <div
+                    id="singleAnswers"
+                    class="single-answers"
+            ></div>
+
+
+            <!-- FOOTER -->
+
+            <div class="answer-book-footer">
+
+                <span>
+                    ♥
+                </span>
+
+                <span>
+                    конец анкеты
+                </span>
+
+                <span>
+                    ♥
+                </span>
+
+            </div>
+
+
+        </article>
+
+
+        <!-- NAVIGATION BETWEEN PEOPLE -->
+
+        <div class="person-navigation">
+
+            <button
+                    id="previousPerson"
+                    class="person-button"
+            >
+                ← предыдущая
+            </button>
+
+
+            <div
+                    id="personPosition"
+                    class="person-position"
+            >
+                1 / 1
+            </div>
+
+
+            <button
+                    id="nextPerson"
+                    class="person-button"
+            >
+                следующая →
+            </button>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+     ===================================================== -->
+
+<footer class="site-footer">
+
+    <div>
+        Сделано мамами с любовью ♥
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+     ===================================================== -->
+
+<script
+        type="module"
+        src="answers.js"
+></script>
+
+
+</body>
+
+</html>

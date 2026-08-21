@@ -1,0 +1,1727 @@
+/* =========================================================
+   GIRLS ANSWERS
+   JOSIE BIRTHDAY
+   ========================================================= */
+
+
+/* =========================================================
+   FONTS
+   ========================================================= */
+
+@import url(
+'https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Delius&family=Quicksand:wght@400;500;600;700&display=swap'
+);
+
+
+/* =========================================================
+   VARIABLES
+   ========================================================= */
+
+:root {
+
+    --pink:
+            #dc709d;
+
+    --pink-dark:
+            #a44070;
+
+    --pink-light:
+            #f3a9c7;
+
+    --paper:
+            #fffdf8;
+
+    --paper-line:
+            rgba(211, 111, 151, .22);
+
+    --text:
+            #754054;
+
+    --muted:
+            #b47792;
+
+    --border:
+            #edbfd0;
+
+    --shadow:
+            rgba(116, 47, 78, .16);
+
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+
+    box-sizing:
+            border-box;
+
+    margin:
+            0;
+
+    padding:
+            0;
+
+}
+
+
+html {
+
+    min-height:
+            100%;
+
+}
+
+
+body {
+
+    min-height:
+            100vh;
+
+    background:
+            #fce8ef;
+
+    color:
+            var(--text);
+
+    font-family:
+            "Delius",
+            cursive;
+
+    overflow-x:
+            hidden;
+
+}
+
+
+/* =========================================================
+   BACKGROUND
+   ========================================================= */
+
+body::before {
+
+    content:
+            "";
+
+    position:
+            fixed;
+
+    inset:
+            0;
+
+    pointer-events:
+            none;
+
+    background-image:
+
+            radial-gradient(
+                    circle,
+                    rgba(255,255,255,.75) 1px,
+                    transparent 1px
+            );
+
+    background-size:
+            28px 28px;
+
+    opacity:
+            .55;
+
+    z-index:
+            -2;
+
+}
+
+
+.background-decor {
+
+    position:
+            fixed;
+
+    inset:
+            0;
+
+    pointer-events:
+            none;
+
+    overflow:
+            hidden;
+
+    z-index:
+            -1;
+
+}
+
+
+.sticker {
+
+    position:
+            absolute;
+
+    font-size:
+            38px;
+
+    opacity:
+            .45;
+
+    user-select:
+            none;
+
+}
+
+
+.sticker-1 {
+
+    top:
+            8%;
+
+    left:
+            5%;
+
+    transform:
+            rotate(-15deg);
+
+}
+
+
+.sticker-2 {
+
+    top:
+            18%;
+
+    right:
+            7%;
+
+    transform:
+            rotate(12deg);
+
+}
+
+
+.sticker-3 {
+
+    top:
+            48%;
+
+    left:
+            3%;
+
+    font-size:
+            30px;
+
+    transform:
+            rotate(20deg);
+
+}
+
+
+.sticker-4 {
+
+    bottom:
+            20%;
+
+    right:
+            4%;
+
+    transform:
+            rotate(-12deg);
+
+}
+
+
+.sticker-5 {
+
+    bottom:
+            8%;
+
+    left:
+            8%;
+
+    font-size:
+            45px;
+
+    transform:
+            rotate(8deg);
+
+}
+
+
+.sticker-6 {
+
+    top:
+            55%;
+
+    right:
+            10%;
+
+    font-size:
+            32px;
+
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header {
+
+    width:
+            min(900px, 92%);
+
+    margin:
+            50px auto 30px;
+
+    text-align:
+            center;
+
+    position:
+            relative;
+
+}
+
+
+.header-decoration {
+
+    font-size:
+            22px;
+
+    color:
+            var(--pink);
+
+    margin-bottom:
+            5px;
+
+}
+
+
+.site-header h1 {
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size:
+            clamp(43px, 8vw, 68px);
+
+    font-weight:
+            600;
+
+    line-height:
+            .95;
+
+    color:
+            var(--pink-dark);
+
+}
+
+
+.header-subtitle {
+
+    margin-top:
+            10px;
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size:
+            24px;
+
+    color:
+            var(--muted);
+
+}
+
+
+.questionnaire-link {
+
+    display:
+            inline-flex;
+
+    align-items:
+            center;
+
+    justify-content:
+            center;
+
+    gap:
+            8px;
+
+    margin-top:
+            18px;
+
+    padding:
+            10px 22px;
+
+    border:
+            1px solid
+            #e5a5bb;
+
+    border-radius:
+            30px;
+
+    background:
+            rgba(255, 255, 255, .72);
+
+    color:
+            var(--pink-dark);
+
+    text-decoration:
+            none;
+
+    font-family:
+            "Delius",
+            cursive;
+
+    font-size:
+            14px;
+
+    line-height:
+            1;
+
+    transition:
+            transform .2s ease,
+            background .2s ease,
+            box-shadow .2s ease;
+
+}
+
+
+.questionnaire-link span {
+
+    font-family:
+            "Delius",
+            cursive;
+
+    font-size:
+            16px;
+
+}
+
+
+.questionnaire-link:hover {
+
+    background:
+            #fff;
+
+    transform:
+            translateY(-2px);
+
+    box-shadow:
+            0 6px 16px
+            rgba(164, 64, 112, .12);
+
+}
+
+
+.header-heart {
+
+    margin-top:
+            10px;
+
+    color:
+            var(--pink);
+
+    font-size:
+            18px;
+
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+   ========================================================= */
+
+.answers-container {
+
+    width:
+            min(1100px, 92%);
+
+    margin:
+            0 auto 70px;
+
+}
+
+
+/* =========================================================
+   VIEWS
+   ========================================================= */
+
+.view {
+
+    display:
+            none;
+
+}
+
+
+.view.active {
+
+    display:
+            block;
+
+}
+
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
+.section-heading {
+
+    display:
+            flex;
+
+    align-items:
+            baseline;
+
+    justify-content:
+            space-between;
+
+    margin:
+            0 8px 20px;
+
+}
+
+
+.section-title {
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size:
+            32px;
+
+    font-weight:
+            600;
+
+    line-height:
+            1;
+
+    color:
+            var(--pink-dark);
+
+}
+
+
+.section-count {
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size:
+            21px;
+
+    color:
+            var(--muted);
+
+}
+
+
+/* =========================================================
+   ANSWERS GRID
+   ========================================================= */
+
+.answers-grid {
+
+    display:
+            grid;
+
+    grid-template-columns:
+            repeat(
+                    auto-fit,
+                    minmax(
+                            280px,
+                            1fr
+                    )
+            );
+
+    gap:
+            22px;
+
+}
+
+
+/* =========================================================
+   PERSON CARD
+   ========================================================= */
+
+.person-card {
+
+    position:
+            relative;
+
+    background:
+            var(--paper);
+
+    border:
+            1px solid
+            var(--border);
+
+    border-radius:
+            18px 14px 20px 12px;
+
+    padding:
+            27px 27px 25px;
+
+    box-shadow:
+            0 10px 28px
+            var(--shadow);
+
+    cursor:
+            pointer;
+
+    transition:
+            transform .25s ease,
+            box-shadow .25s ease;
+
+    overflow:
+            hidden;
+
+}
+
+
+.person-card::before {
+
+    content:
+            "";
+
+    position:
+            absolute;
+
+    top:
+            0;
+
+    left:
+            0;
+
+    right:
+            0;
+
+    height:
+            5px;
+
+    background:
+            linear-gradient(
+                    90deg,
+                    #ef9fbb,
+                    #f8c8d8
+            );
+
+}
+
+
+.person-card:nth-child(2n) {
+
+    transform:
+            rotate(.5deg);
+
+}
+
+
+.person-card:nth-child(3n) {
+
+    transform:
+            rotate(-.5deg);
+
+}
+
+
+.person-card:hover {
+
+    transform:
+            translateY(-6px)
+            rotate(0deg);
+
+    box-shadow:
+            0 16px 34px
+            rgba(
+                    120,
+                    50,
+                    80,
+                    .18
+            );
+
+}
+
+
+.card-top {
+
+    display:
+            flex;
+
+    justify-content:
+            space-between;
+
+    align-items:
+            center;
+
+    margin-bottom:
+            17px;
+
+}
+
+
+.card-number {
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size:
+            20px;
+
+    color:
+            #c58da2;
+
+}
+
+
+.card-heart {
+
+    color:
+            var(--pink);
+
+    font-size:
+            19px;
+
+}
+
+
+.person-name {
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size:
+            34px;
+
+    font-weight:
+            600;
+
+    line-height:
+            1;
+
+    color:
+            var(--pink-dark);
+
+    margin-bottom:
+            6px;
+
+}
+
+
+.person-age {
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size:
+            21px;
+
+    color:
+            var(--muted);
+
+}
+
+
+.card-divider {
+
+    height:
+            1px;
+
+    background:
+            #f5dce5;
+
+    margin:
+            18px 0;
+
+}
+
+
+.card-bottom {
+
+    display:
+            flex;
+
+    justify-content:
+            space-between;
+
+    align-items:
+            center;
+
+}
+
+
+.card-date {
+
+    font-family:
+            "Quicksand",
+            sans-serif;
+
+    font-size:
+            12px;
+
+    color:
+            #bd9aaa;
+
+}
+
+
+.read-button {
+
+    border:
+            none;
+
+    background:
+            transparent;
+
+    color:
+            var(--pink-dark);
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size:
+            20px;
+
+    cursor:
+            pointer;
+
+}
+
+
+.read-button:hover {
+
+    text-decoration:
+            underline;
+
+}
+
+
+/* =========================================================
+   LOADING
+   ========================================================= */
+
+.loading {
+
+    min-height:
+            300px;
+
+    display:
+            flex;
+
+    flex-direction:
+            column;
+
+    align-items:
+            center;
+
+    justify-content:
+            center;
+
+    color:
+            var(--muted);
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size:
+            23px;
+
+}
+
+
+.loading-heart {
+
+    color:
+            var(--pink);
+
+    font-size:
+            38px;
+
+    margin-bottom:
+            8px;
+
+    animation:
+            heartbeat 1.2s infinite;
+
+}
+
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+
+        transform:
+                scale(1);
+
+    }
+
+    50% {
+
+        transform:
+                scale(1.2);
+
+    }
+
+}
+
+
+/* =========================================================
+   ERROR
+   ========================================================= */
+
+.error-message {
+
+    display:
+            none;
+
+    text-align:
+            center;
+
+    padding:
+            70px 20px;
+
+}
+
+
+.error-message.visible {
+
+    display:
+            block;
+
+}
+
+
+.error-icon {
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size:
+            50px;
+
+    color:
+            var(--pink-dark);
+
+    margin-bottom:
+            15px;
+
+}
+
+
+.pink-button {
+
+    margin-top:
+            20px;
+
+    border:
+            none;
+
+    border-radius:
+            30px;
+
+    background:
+            var(--pink);
+
+    color:
+            white;
+
+    padding:
+            11px 23px;
+
+    font-family:
+            "Delius",
+            cursive;
+
+    cursor:
+            pointer;
+
+}
+
+
+/* =========================================================
+   EMPTY
+   ========================================================= */
+
+.empty-message {
+
+    display:
+            none;
+
+    text-align:
+            center;
+
+    padding:
+            80px 20px;
+
+}
+
+
+.empty-message.visible {
+
+    display:
+            block;
+
+}
+
+
+.empty-icon {
+
+    font-size:
+            50px;
+
+    margin-bottom:
+            12px;
+
+}
+
+
+.empty-title {
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size:
+            34px;
+
+    font-weight:
+            600;
+
+    color:
+            var(--pink-dark);
+
+}
+
+
+.empty-text {
+
+    margin-top:
+            8px;
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size:
+            21px;
+
+    color:
+            var(--muted);
+
+}
+
+
+/* =========================================================
+   SINGLE VIEW
+   ========================================================= */
+
+.back-button {
+
+    border:
+            none;
+
+    background:
+            transparent;
+
+    color:
+            var(--pink-dark);
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size:
+            22px;
+
+    cursor:
+            pointer;
+
+    margin:
+            0 0 18px 5px;
+
+}
+
+
+.back-button:hover {
+
+    text-decoration:
+            underline;
+
+}
+
+
+/* =========================================================
+   ANSWER BOOK
+   ========================================================= */
+
+.answer-book {
+
+    max-width:
+            850px;
+
+    margin:
+            0 auto;
+
+    background:
+            var(--paper);
+
+    border:
+            1px solid
+            var(--border);
+
+    border-radius:
+            24px 18px 26px 20px;
+
+    box-shadow:
+            0 18px 45px
+            var(--shadow);
+
+    overflow:
+            hidden;
+
+}
+
+
+/* =========================================================
+   ANSWER BOOK HEADER
+   ========================================================= */
+
+.answer-book-header {
+
+    text-align:
+            center;
+
+    padding:
+            45px 35px 35px;
+
+    background:
+            linear-gradient(
+                    180deg,
+                    #fff4f8,
+                    #fffdfd
+            );
+
+}
+
+
+.little-heart {
+
+    color:
+            var(--pink);
+
+    font-size:
+            24px;
+
+    margin-bottom:
+            10px;
+
+}
+
+
+.answer-book-header h2 {
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size:
+            52px;
+
+    font-weight:
+            600;
+
+    line-height:
+            .95;
+
+    color:
+            var(--pink-dark);
+
+}
+
+
+.single-meta {
+
+    margin-top:
+            8px;
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size:
+            21px;
+
+    color:
+            var(--muted);
+
+}
+
+
+.header-line {
+
+    margin-top:
+            18px;
+
+    color:
+            #e6a2ba;
+
+    letter-spacing:
+            8px;
+
+}
+
+
+/* =========================================================
+   SINGLE ANSWERS
+   ========================================================= */
+
+.single-answers {
+
+    padding:
+            10px 55px 40px;
+
+}
+
+
+/* =========================================================
+   SINGLE QUESTION
+   ========================================================= */
+
+.answer-item {
+
+    padding:
+            28px 0;
+
+    border-bottom:
+            1px dashed
+            #eccbd7;
+
+}
+
+
+.answer-item:last-child {
+
+    border-bottom:
+            none;
+
+}
+
+
+.answer-question {
+
+    display:
+            flex;
+
+    gap:
+            10px;
+
+    align-items:
+            baseline;
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size:
+            26px;
+
+    font-weight:
+            600;
+
+    line-height:
+            1.15;
+
+    color:
+            var(--pink-dark);
+
+}
+
+
+.answer-number {
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    color:
+            #c48ba1;
+
+    font-size:
+            22px;
+
+    flex:
+            0 0 auto;
+
+}
+
+
+.answer-description {
+
+    margin:
+            7px 0 10px 34px;
+
+    font-family:
+            "Quicksand",
+            sans-serif;
+
+    font-size:
+            13px;
+
+    line-height:
+            1.5;
+
+    color:
+            #b18b99;
+
+}
+
+
+.answer-text {
+
+    margin:
+            13px 0 0 34px;
+
+    font-family:
+            "Delius",
+            cursive;
+
+    font-size:
+            16px;
+
+    line-height:
+            1.75;
+
+    color:
+            var(--text);
+
+    white-space:
+            pre-wrap;
+
+    word-break:
+            break-word;
+
+}
+
+
+.answer-empty {
+
+    margin:
+            13px 0 0 34px;
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size:
+            19px;
+
+    color:
+            #cba7b5;
+
+}
+
+
+/* =========================================================
+   BOOK FOOTER
+   ========================================================= */
+
+.answer-book-footer {
+
+    border-top:
+            1px solid
+            #f1d7e0;
+
+    padding:
+            25px;
+
+    text-align:
+            center;
+
+    display:
+            flex;
+
+    justify-content:
+            center;
+
+    gap:
+            16px;
+
+    color:
+            #cf94aa;
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size:
+            19px;
+
+}
+
+
+/* =========================================================
+   PERSON NAVIGATION
+   ========================================================= */
+
+.person-navigation {
+
+    max-width:
+            850px;
+
+    margin:
+            20px auto 0;
+
+    display:
+            flex;
+
+    align-items:
+            center;
+
+    justify-content:
+            space-between;
+
+}
+
+
+.person-button {
+
+    border:
+            1px solid
+            var(--border);
+
+    background:
+            rgba(
+                    255,
+                    255,
+                    255,
+                    .8
+            );
+
+    border-radius:
+            30px;
+
+    padding:
+            9px 17px;
+
+    color:
+            var(--pink-dark);
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size:
+            18px;
+
+    cursor:
+            pointer;
+
+    transition:
+            background .2s ease,
+            transform .2s ease;
+
+}
+
+
+.person-button:hover:not(:disabled) {
+
+    background:
+            white;
+
+    transform:
+            translateY(-2px);
+
+}
+
+
+.person-button:disabled {
+
+    opacity:
+            .35;
+
+    cursor:
+            default;
+
+}
+
+
+.person-position {
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size:
+            20px;
+
+    color:
+            var(--muted);
+
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.site-footer {
+
+    text-align:
+            center;
+
+    padding:
+            25px;
+
+    font-family:
+            "Caveat",
+            cursive;
+
+    font-size:
+            19px;
+
+    color:
+            #bf8ca0;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .site-header {
+
+        margin-top:
+                30px;
+
+    }
+
+
+    .site-header h1 {
+
+        font-size:
+                45px;
+
+    }
+
+
+    .answers-container {
+
+        width:
+                94%;
+
+    }
+
+
+    .section-heading {
+
+        align-items:
+                flex-start;
+
+        flex-direction:
+                column;
+
+        gap:
+                3px;
+
+    }
+
+
+    .single-answers {
+
+        padding:
+                10px 25px 30px;
+
+    }
+
+
+    .answer-book-header {
+
+        padding:
+                35px 20px 28px;
+
+    }
+
+
+    .answer-book-header h2 {
+
+        font-size:
+                42px;
+
+    }
+
+
+    .answer-question {
+
+        font-size:
+                23px;
+
+    }
+
+
+    .answer-text {
+
+        margin-left:
+                30px;
+
+        font-size:
+                15px;
+
+    }
+
+
+    .person-navigation {
+
+        gap:
+                10px;
+
+    }
+
+
+    .person-button {
+
+        font-size:
+                16px;
+
+        padding:
+                8px 13px;
+
+    }
+
+
+    .sticker {
+
+        opacity:
+                .25;
+
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .site-header h1 {
+
+        font-size:
+                42px;
+
+    }
+
+
+    .section-title {
+
+        font-size:
+                28px;
+
+    }
+
+
+    .person-name {
+
+        font-size:
+                31px;
+
+    }
+
+
+    .answer-book-header h2 {
+
+        font-size:
+                38px;
+
+    }
+
+
+    .answer-question {
+
+        font-size:
+                21px;
+
+    }
+
+
+    .single-answers {
+
+        padding:
+                5px 20px 25px;
+
+    }
+
+
+    .answer-item {
+
+        padding:
+                22px 0;
+
+    }
+
+
+    .answer-text {
+
+        margin-left:
+                27px;
+
+        font-size:
+                14px;
+
+    }
+
+
+    .answer-description {
+
+        margin-left:
+                27px;
+
+        font-size:
+                12px;
+
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration:
+                .01ms !important;
+
+        animation-iteration-count:
+                1 !important;
+
+        scroll-behavior:
+                auto !important;
+
+        transition-duration:
+                .01ms !important;
+
+    }
+
+}
