@@ -75,7 +75,7 @@ const questions = [
         number: 2,
 
         title:
-            "Возраст:",
+            "Возраст",
 
         description:
             "Сколько тебе сейчас лет?"
